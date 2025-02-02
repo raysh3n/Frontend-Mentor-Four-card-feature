@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [here]()
-- Live Site URL: [here]()
+- Solution URL: [here](https://www.frontendmentor.io/solutions/responsive-four-card-feature-KBgfU_t4Zq)
+- Live Site URL: [here](https://fem-four-card-feature-raysh3n.netlify.app/)
 
 ## My process
 
