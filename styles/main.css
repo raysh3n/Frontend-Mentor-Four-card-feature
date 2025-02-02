@@ -1,0 +1,183 @@
+:root {
+	/* Primary */
+	/*main background*/
+	--clr-red: hsl(0, 78%, 62%);
+	--clr-cyan: hsl(180, 62%, 55%);
+	--clr-orange: hsl(34, 97%, 64%);
+	--clr-blue: hsl(212, 86%, 64%);
+	/* Neutral */
+	--clr-very-dark-blue: hsl(234, 12%, 34%);
+	--clr-grayish-blue: hsl(229, 6%, 66%);
+	--clr--very-light-gray: hsl(0, 0%, 98%);
+
+	--font-weight-light: 200;
+	--font-weight-medium: 400;
+	--font-weight-heavy: 600;
+}
+
+*, *::after, *::before {
+	font-family: "Poppins", serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	user-select: none;
+	max-width: 100%;
+}
+
+body {
+	height: 100dvh;
+	background-color: var(--clr-very-light-gray);
+	display: grid;
+	place-items: center;
+}
+
+.container {
+	/* width: 100%; */
+	max-width: 30rem;
+	/* outline: 1px solid red; */
+	/* display: grid;
+	place-items: center; */
+
+}
+
+.introduction {
+	text-align: center;
+	/* outline: 1px solid black; */
+}
+
+
+h1 {
+	font-size: 1.5rem;
+	/* outline: 1px solid black; */
+
+}
+
+p {
+	font-size: 13.5px;
+	color: var(--clr-grayish-blue);
+}
+
+
+main {
+	/* outline: 5px solid black; */
+	padding: 5rem 3.5rem;
+}
+
+.introduction p {
+	padding-top: 1rem;
+	padding-bottom: 4rem;
+}
+
+.introduction h1 span {
+	font-weight: var(--font-weight-light);
+	display: block;
+}
+
+.card {
+	max-width: 23rem;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	border-radius: 5px 5px 8px 8px;
+	background-color: white;
+	padding: 1.8rem;
+	/* position: relative; */
+}
+
+.card__section {
+	display: flex;
+	flex-direction: column;
+	--gap-card: 1.5rem;
+	gap: var(--gap-card);
+}
+
+
+.card p {
+	margin-top: 0.8rem;
+	margin-bottom: 2rem;
+}
+
+
+.card__image-section {
+	/* outline: 1px solid green; */
+	display: flex;
+	justify-content: flex-end;
+}
+
+.card img {
+	/* outline: 1px solid black; */
+	display: block;
+
+}
+
+
+
+.card__group {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap-card);
+}
+
+
+.card__supervisor {
+	border-top: var(--clr-cyan) 5px solid;
+}
+
+
+.card__team-builder {
+	border-top: var(--clr-red) 5px solid;
+}
+
+
+.card__karma {
+	border-top: var(--clr-orange) 5px solid;
+}
+
+.card__calculator {
+	border-top: var(--clr-blue) 5px solid;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 77.5rem) {
+
+	.container {
+		max-width: 77.5rem;
+	}
+
+	main {
+		/* outline: 5px solid black; */
+		padding-block: 1rem;
+	}
+
+
+
+	.introduction p {
+		text-align: center;
+		/* outline: 1px solid black; */
+		max-width: 40%;
+		margin-inline: auto;
+	}
+
+	.card__section {
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
